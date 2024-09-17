@@ -49,13 +49,12 @@ public class Main {
         }
         int places = 102 ;
         boolean capacity = places >= 102 ;
-/* исправил , нужно было сразу пределы перепроверить,
-нехватало знаков = в двух местах */
-        if (places >= 60 && places <= 102) {
+/* исправил */
+        if (places >= 60 && places <=102) {
             System.out.println("есть стоячие места");
 
         } else if (capacity){
-            System.out.println("вагон уже полностью забит");
+            System.out.printf("вагон уже полностью забит");
 
         }else {
             System.out.println("есть сидячие места");
